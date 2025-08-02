@@ -34,9 +34,9 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
+    <div className="min-h-screen rustic-bg">
       {/* Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50">
+      <header className="rustic-overlay shadow-lg sticky top-0 z-50 border-b border-amber-200">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -67,7 +67,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="py-20">
+      <section id="home" className="py-20 hero-rustic">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
             El Yapımı <span className="text-amber-600">Ahşap</span> Sanatları
@@ -88,14 +88,14 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 bg-white">
+      <section id="products" className="py-20 rustic-overlay">
         <div className="container mx-auto px-4">
           <h3 className="text-4xl font-bold text-center text-gray-800 mb-12">
             Özel Tasarım Ürünlerimiz
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
-              <div key={product.id} className="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+              <div key={product.id} className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden card-hover border border-amber-200">
                 <div className="h-48 bg-gradient-to-br from-amber-100 to-orange-200 flex items-center justify-center">
                   <div className="text-4xl">🪵</div>
                 </div>
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20">
+      <section id="about" className="py-20 rustic-overlay">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 rustic-overlay">
         <div className="container mx-auto px-4">
           <h3 className="text-4xl font-bold text-center text-gray-800 mb-12">
             İletişim
