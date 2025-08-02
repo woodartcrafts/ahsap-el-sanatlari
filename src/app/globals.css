@@ -32,6 +32,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: #fef3c7; /* Fallback color */
 }
 
 /* Overlay for better text readability */
@@ -52,4 +53,5 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: #fef3c7; /* Fallback color */
 }
