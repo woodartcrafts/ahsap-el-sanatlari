@@ -1,0 +1,133 @@
+# Cursor's Memory Bank - Ahşap El Sanatları E-Ticaret Sitesi
+
+## Memory Bank Yapısı
+
+Bu proje için Memory Bank oluşturulmuştur. Her oturumda Memory Bank dosyalarını okumalı ve proje bağlamını anlamalısın.
+
+### Memory Bank Dosyaları
+- `memory-bank/projectbrief.md` - Proje temel amacı ve kapsamı
+- `memory-bank/productContext.md` - Neden bu proje var ve nasıl çalışmalı
+- `memory-bank/systemPatterns.md` - Sistem mimarisi ve tasarım desenleri
+- `memory-bank/techContext.md` - Kullanılan teknolojiler ve kısıtlamalar
+- `memory-bank/activeContext.md` - Mevcut çalışma odak noktası
+- `memory-bank/progress.md` - Ne çalışıyor, ne kaldı
+
+## Proje Özel Kuralları
+
+### Teknoloji Yığını
+- **Next.js 15.4.5** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS** (özel navy/blue renk paleti)
+- **Lucide React** (ikonlar)
+
+### Tasarım Prensipleri
+- Ahşap ve doğal malzeme teması
+- Navy ve Blue renk paleti
+- Mobile-first responsive tasarım
+- Minimalist ve temiz tasarım
+- Geist font ailesi kullanımı
+
+### Kod Standartları
+- TypeScript strict mode
+- ESLint kurallarına uyum
+- Tailwind CSS utility classes
+- Component-based architecture
+- Atomic Design yaklaşımı
+
+### Dosya Organizasyonu
+```
+src/
+├── app/                    # Next.js App Router
+├── components/            # Yeniden kullanılabilir bileşenler
+├── lib/                  # Yardımcı fonksiyonlar
+├── types/                # TypeScript tip tanımları
+└── utils/                # Yardımcı araçlar
+```
+
+### Bileşen Yapısı
+- Her bileşen ayrı dosyada
+- TypeScript interface'leri tanımla
+- Props validation kullan
+- Tailwind CSS ile styling
+- Lucide React ikonları
+
+### State Yönetimi
+- Henüz global state management yok
+- Local state için useState/useReducer
+- Gelecekte Zustand veya Redux Toolkit planlanıyor
+
+### Performans Hedefleri
+- Lighthouse skoru: 90+
+- Core Web Vitals uyumluluğu
+- SEO skoru: 95+
+- Accessibility skoru: 95+
+
+## Önemli Notlar
+
+### Mevcut Durum
+- Ana sayfa tasarımı hazır (466 satır)
+- Responsive header ve ürün kartları mevcut
+- Backup dosyaları var (.backup uzantılı)
+- Ürün resimleri eksik
+
+### Kritik Eksiklikler
+1. Ürün resimleri (placeholder gerekli)
+2. Backend entegrasyonu
+3. Sepet fonksiyonalitesi
+4. SEO meta data'ları
+5. State management
+
+### Bir Sonraki Adımlar
+1. Memory Bank tamamlama
+2. Bileşen ayrıştırma (Header, ProductCard, Footer)
+3. Ürün resimleri ekleme
+4. SEO optimizasyonu
+
+## Geliştirme Kuralları
+
+### Memory Bank Kullanımı
+- Her oturumda Memory Bank dosyalarını oku
+- Proje geliştikçe dokümantasyonu güncelle
+- Teknik kararları belgele
+- Kullanıcı geri bildirimlerini kaydet
+
+### Kod Yazma Kuralları
+- Türkçe yorumlar kullan
+- Anlamlı değişken isimleri
+- TypeScript tip güvenliği
+- Tailwind CSS utility classes
+- Responsive tasarım
+
+### Commit Mesajları
+- Türkçe commit mesajları
+- Açıklayıcı ve kısa
+- Feature bazlı commit'ler
+
+### Test Stratejisi
+- Gelecekte Jest ve React Testing Library
+- Unit test coverage: %80+
+- E2E testler için Playwright
+
+## Proje Bağlamı
+
+Bu proje "ahsap-site-temiz" adında bir ahşap el sanatları e-ticaret sitesidir. El yapımı ahşap ürünlerin satışını yapan, kullanıcı dostu ve modern bir platform geliştirmeyi hedefliyor.
+
+### Hedef Kitle
+- El yapımı ahşap ürünlere ilgi duyan müşteriler
+- Dekoratif ev eşyaları arayan kişiler
+- 25-55 yaş arası, orta-üst gelir grubu
+
+### Temel Özellikler
+- Ürün vitrini ve detay sayfaları
+- Sepet yönetimi
+- Kullanıcı hesapları
+- Blog sistemi
+- Güvenli ödeme sistemi
+
+### Teknik Avantajlar
+- Modern Next.js teknolojisi
+- SEO dostu yapı
+- Mobil öncelikli tasarım
+- Hızlı yükleme süreleri
+- Güvenli altyapı 

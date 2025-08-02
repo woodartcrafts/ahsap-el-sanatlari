@@ -51,14 +51,14 @@ export default function Home() {
               <div className="w-12 h-12 bg-navy-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">A</span>
               </div>
-              <h1 className="text-2xl font-bold text-gray-800">Ahşap El Sanatları</h1>
+              <h1 className="text-2xl font-bold text-gray-800 hero-title">Ahşap El Sanatları</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-600 hover:text-navy-600 transition-colors">Ana Sayfa</a>
-              <a href="#products" className="text-gray-600 hover:text-navy-600 transition-colors">Ürünler</a>
-              <a href="#about" className="text-gray-600 hover:text-navy-600 transition-colors">Hakkımızda</a>
-              <a href="/blog" className="text-gray-600 hover:text-navy-600 transition-colors">Blog</a>
-              <a href="#contact" className="text-gray-600 hover:text-navy-600 transition-colors">İletişim</a>
+              <a href="#home" className="text-gray-600 hover:text-navy-600 transition-colors nav-link">Ana Sayfa</a>
+              <a href="#products" className="text-gray-600 hover:text-navy-600 transition-colors nav-link">Ürünler</a>
+              <a href="#about" className="text-gray-600 hover:text-navy-600 transition-colors nav-link">Hakkımızda</a>
+              <a href="/blog" className="text-gray-600 hover:text-navy-600 transition-colors nav-link">Blog</a>
+              <a href="#contact" className="text-gray-600 hover:text-navy-600 transition-colors nav-link">İletişim</a>
             </nav>
             <div className="flex items-center space-x-4">
               <button className="p-2 text-gray-600 hover:text-navy-600 transition-colors">
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           
-          <h2 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+          <h2 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-2xl hero-title">
             El Yapımı <span className="text-navy-300 bg-gradient-to-r from-navy-300 to-blue-300 bg-clip-text text-transparent">Ahşap</span> Sanatları
           </h2>
           
@@ -127,10 +127,10 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <button className="btn-primary text-lg px-8 py-4 bg-navy-600 hover:bg-navy-700 border-2 border-navy-500">
+            <button className="btn-primary text-lg px-8 py-4 bg-navy-600 hover:bg-navy-700 border-2 border-navy-500 btn">
               Ürünleri İncele
             </button>
-            <button className="btn-secondary text-lg px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/30">
+            <button className="btn-secondary text-lg px-8 py-4 bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 hover:bg-white/30 btn">
               Atölyemizi Ziyaret Et
             </button>
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-bold text-gray-800 mb-6">
+            <h3 className="text-5xl font-bold text-gray-800 mb-6 section-title">
               Özel Tasarım <span className="text-navy-600">Ürünlerimiz</span>
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -183,7 +183,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h4 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h4>
+                  <h4 className="text-xl font-semibold text-gray-800 mb-2 product-title">{product.name}</h4>
                   <p className="text-gray-600 mb-4">{product.description}</p>
                   
                   {/* Rating */}
@@ -211,7 +211,7 @@ export default function Home() {
                       </button>
                     </div>
                   </div>
-                  <button className="w-full mt-4 btn-primary">
+                  <button className="w-full mt-4 btn-primary btn">
                     Satın Al
                   </button>
                 </div>
@@ -236,7 +236,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <h3 className="text-5xl font-bold text-gray-800 mb-6">
+              <h3 className="text-5xl font-bold text-gray-800 mb-6 section-title">
                 Hakkımızda
               </h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -284,7 +284,7 @@ export default function Home() {
       <section className="py-20 bg-white relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-bold text-gray-800 mb-6">
+            <h3 className="text-5xl font-bold text-gray-800 mb-6 section-title">
               Son <span className="text-navy-600">Blog Yazılarımız</span>
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -294,7 +294,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-navy-50 to-blue-100 rounded-2xl p-6 card-hover">
               <div className="text-4xl mb-4">📝</div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-xl font-semibold text-gray-800 mb-3 product-title">
                 Ahşap El Sanatlarının Tarihi
               </h4>
               <p className="text-gray-600 mb-4">
@@ -306,7 +306,7 @@ export default function Home() {
             </div>
             <div className="bg-gradient-to-br from-navy-50 to-blue-100 rounded-2xl p-6 card-hover">
               <div className="text-4xl mb-4">🔧</div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-xl font-semibold text-gray-800 mb-3 product-title">
                 Ahşap İşleme Teknikleri
               </h4>
               <p className="text-gray-600 mb-4">
@@ -318,7 +318,7 @@ export default function Home() {
             </div>
             <div className="bg-gradient-to-br from-navy-50 to-blue-100 rounded-2xl p-6 card-hover">
               <div className="text-4xl mb-4">🛡️</div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-3">
+              <h4 className="text-xl font-semibold text-gray-800 mb-3 product-title">
                 Ahşap Bakım Yöntemleri
               </h4>
               <p className="text-gray-600 mb-4">
@@ -330,7 +330,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-12">
-            <a href="/blog" className="btn-primary text-lg px-8 py-4">
+            <a href="/blog" className="btn-primary text-lg px-8 py-4 btn">
               Tüm Blog Yazılarını Gör
             </a>
           </div>
@@ -341,12 +341,12 @@ export default function Home() {
       <section id="contact" className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <h3 className="text-5xl font-bold text-center text-gray-800 mb-12">
+          <h3 className="text-5xl font-bold text-center text-gray-800 mb-12 section-title">
             İletişim
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h4 className="text-3xl font-semibold text-gray-800 mb-6">
+              <h4 className="text-3xl font-semibold text-gray-800 mb-6 product-title">
                 Bizimle İletişime Geçin
               </h4>
               <div className="space-y-6">
@@ -388,7 +388,7 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-navy-50 to-blue-100 rounded-2xl p-8 shadow-xl">
-              <h4 className="text-3xl font-semibold text-gray-800 mb-6">
+              <h4 className="text-3xl font-semibold text-gray-800 mb-6 product-title">
                 Mesaj Gönderin
               </h4>
               <form className="space-y-4">
@@ -407,7 +407,7 @@ export default function Home() {
                   rows={4}
                   className="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-navy-600 text-lg"
                 ></textarea>
-                <button type="submit" className="w-full btn-primary text-lg py-4">
+                <button type="submit" className="w-full btn-primary text-lg py-4 btn">
                   Mesaj Gönder
                 </button>
               </form>
@@ -421,14 +421,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-2xl font-bold mb-4">Ahşap El Sanatları</h4>
+              <h4 className="text-2xl font-bold mb-4 product-title">Ahşap El Sanatları</h4>
               <p className="text-gray-300 leading-relaxed">
                 El yapımı özel tasarım ahşap ürünler. 20 yıllık deneyimimizle 
                 geleneksel teknikleri modern tasarımlarla birleştiriyoruz.
               </p>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-lg">Ürünler</h5>
+              <h5 className="font-semibold mb-4 text-lg nav-link">Ürünler</h5>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="#" className="hover:text-navy-400 transition-colors">Dekoratif Ürünler</a></li>
                 <li><a href="#" className="hover:text-navy-400 transition-colors">Mobilya</a></li>
@@ -437,7 +437,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-lg">Hizmetler</h5>
+              <h5 className="font-semibold mb-4 text-lg nav-link">Hizmetler</h5>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="#" className="hover:text-navy-400 transition-colors">Özel Tasarım</a></li>
                 <li><a href="#" className="hover:text-navy-400 transition-colors">Kurumsal Hediye</a></li>
@@ -446,7 +446,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h5 className="font-semibold mb-4 text-lg">İletişim</h5>
+              <h5 className="font-semibold mb-4 text-lg nav-link">İletişim</h5>
               <ul className="space-y-3 text-gray-300">
                 <li>+90 555 123 45 67</li>
                 <li>info@ahsapelsanatlari.com</li>

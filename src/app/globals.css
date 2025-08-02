@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font Variables */
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+}
+
+/* Base Font Settings */
+body {
+  font-family: var(--font-inter);
+  line-height: 1.6;
+}
+
+/* Heading Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Special Headings */
+.hero-title {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-title {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+/* Product Titles */
+.product-title {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+.nav-link {
+  font-family: var(--font-inter);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+
 @layer components {
   .btn-primary {
     @apply bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
